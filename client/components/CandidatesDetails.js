@@ -15,7 +15,7 @@ export default function CandidatesDetails({ candidates }) {
             if (diffInDays > 0) {
                 
                 if (diffInDays < 31) {
-                    return `Gap between jobs: ${currentStart.diff(previousEnd, 'day')} days`;
+                    return `Gap between jobs: ${diffInDays} days`;
                 } else if (diffInDays >= 31 && diffInDays < 365) {
                     return `Gap between jobs: ${currentStart.diff(previousEnd, 'month')} months`;
                 } else {
